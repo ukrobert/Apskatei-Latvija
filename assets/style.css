@@ -1,8 +1,21 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
+
+
+
+body {
+    /* Свойства фона для современных браузеров */
+    background-image: linear-gradient(to right, #ff800079, #aa0b0b79, #ddcccc7a); /* Градиент переливания от оранжевого к синему через фиолетовый по горизонтали */
+    background-size: 200% auto;
+    animation: gradientAnimation 4s linear infinite;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+   
+}
+
 
 
 header {
