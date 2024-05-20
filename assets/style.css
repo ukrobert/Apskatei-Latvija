@@ -18,7 +18,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url("assets/Decore.png");
+  background-image: url("assets/images/Decore.png");
   background-repeat: no-repeat;
   background-position: top 0 right 0;
   font-family: "Poppins", sans-serif;
@@ -350,22 +350,16 @@ nav .links ul li a {
 }
 
 .next-trip .content .steps .step {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /* justify-content: center; */
+  align-items: center;
   margin-bottom: 1rem;
   gap: 1rem;
 }
 
 .next-trip .content .steps .step .text .title {
   font-size: 1.2rem;
-  margin: 0.3rem 0;
+    
 }
 
 .next-trip .content .steps .step .text p {
@@ -387,6 +381,8 @@ nav .links ul li a {
 .next-trip .content .steps .step .icon img {
   height: 3rem;
 }
+
+
 
 .next-trip .trip {
   display: -webkit-box;
@@ -628,8 +624,8 @@ footer .grid .social .links .link {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* background-image: -webkit-gradient(linear, left top, right top, from(#74ebd5), to(#9face6)); */
-  background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+ 
+  
 }
 
 footer .grid .social .links .link i {
