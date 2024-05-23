@@ -1232,3 +1232,141 @@ footer span {
 .small-button:hover {
   background-color: #0056b3;
 }
+
+
+
+/* admin */
+
+.admin .kopsavilkums{
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+  gap: 1.5rem;
+}
+
+
+.admin .kopsavilkums .info-box{
+/* border: var(--border);
+border-radius: var(--radius);
+box-shadow: var(--box-shadow); */
+padding: 2rem 0;
+text-align: center;
+display: flex;
+justify-content: space-around;
+}
+
+
+.info-box span{
+width: 7rem;
+height: 7rem;
+font-size: 3rem;
+/* color: var(--main-color);
+background:var(--bg);
+border-radius: var(--radius); */
+margin: 0 .5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.info-box h3{
+color: var(--black);
+padding: 1rem;
+font-size: 1.7rem;
+}
+
+
+.info-box p{
+  color: var(--black);
+  font-size: 1.3rem;
+}
+
+.admin .row{
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.admin .defaultBorder{
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius);
+}
+
+.admin .row .info1{
+  flex: 1 1 45rem;
+}
+
+.admin .row .info2{
+  flex: 1 1 20rem;
+}
+
+
+.head-info{
+  background: #f8f8f8;
+  color: var(--black);
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: .1rem solid #ddd;
+}
+
+.head-color{
+  background: var(--bg);
+}
+
+.head-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+#sph3{
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+th, td{
+  text-align: center;
+  height: 4rem;
+  border-bottom: .1rem solid #ddd;
+}
+
+th{
+  color: var(--black);
+}
+
+tr:hover{
+  background: var(--bg);
+}
+
+.admin .btn{
+  margin: 0;
+  padding: .5rem 1.5rem;
+}
+
+
+.adminTable{
+  font-size: 1.2rem;
+  table-layout: fixed;
+}
+
+
+.current{
+  font-weight: bold;
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+}
+
+table .value{
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 50%;
+}

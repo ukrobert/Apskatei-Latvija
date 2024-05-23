@@ -37,3 +37,26 @@ sr.reveal(
     interval: 200,
   }
 );
+
+
+let menu = document.querySelector('#menu-bar')
+let navbar = document.querySelector('nav')
+
+menu.onClick = () =>{
+    navbar.classList.toggle('active')
+    menu.classList.toggle('fa-times')
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active')
+    menu.classList.remove('fa-times')
+}
+
+if (window.history.replaceState) {
+    window.history(null, null, window.location.href);
+}
+
+x = () =>{
+    let alert = document.getElementById("notifemail")
+    alert.style.display="none"
+}
