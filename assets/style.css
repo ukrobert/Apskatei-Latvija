@@ -957,4 +957,220 @@ footer span {
     margin: 0 6rem;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+
+
+
+
+/* guides */
+
+.next-guides {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.next-guides .content .title {
+  font-size: 2rem;
+  margin: 0.3rem 0 1rem 0;
+}
+
+.next-guides .content .steps .step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.next-guides .content .steps .step .text .title {
+  font-size: 1.2rem;
+}
+
+.next-guides .content .steps .step .text p {
+  width: 70%;
+}
+
+.next-guides .content .steps .step .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-guides .guides-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+}
+
+.next-guides .guides {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2rem;
+  padding: 1rem;
+  align-items: center; 
+}
+
+.next-guides .guides .title {
+  margin: 0.5rem;
+}
+
+.next-guides .guides .subTitle {
+  margin: 0 0.5rem;
+  color: #4e4e4e;
+  text-align: center; 
+  width: 70%;
+}
+
+.next-guides .guides .icons {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.next-guides .guides .icons .icon {
+  margin: 0 0 0 0.5rem;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.next-guides .guides img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+
+/* eks sadala */
+
+.next-eks {
+  margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.next-eks .content .title {
+  font-size: 2rem;
+  margin: 0.3rem 0 1rem 0;
+}
+
+.next-eks .content .steps .step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.next-eks.content .steps .step .text .title {
+  font-size: 1.2rem;
+}
+
+.next-eks .content .steps .step .text p {
+  width: 70%;
+}
+
+.next-eks .content .steps .step .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next-eks .eks-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+}
+
+.next-eks .eks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 2rem;
+  padding: 1rem;
+  align-items: center; 
+}
+
+.next-eks .eks.title {
+  margin: 0.5rem;
+}
+
+.next-eks .eks .subTitle {
+  margin: 0 0.5rem;
+  color: #4e4e4e;
+  text-align: center; 
+  width: 70%;
+}
+
+.next-eks .eks.icons {
+  margin: 1rem 0;
+  display: flex;
+}
+
+.next-eks .eks .icons .icon {
+  margin: 0 0 0 0.5rem;
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+}
+
+.next-eks .eks img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+
+.orange-button {
+  background-color: #ff6300; 
+  color: white; 
+  padding: 10px 20px;
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  transition: background-color 0.3s; 
+  
+}
+
+.orange-button:hover {
+  background-color: #f05000; 
+}
+
+
+.about {
+  background: #ffffff;
+  padding: 30px 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.about h2 {
+  margin-top: 0;
+}
+.about p {
+  line-height: 1.6;
+}
+.contacts {
+  background: #ff6300;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border-radius: 20px;
+}
+.contacts h3 {
+  margin-top: 0;
+}
+.contacts ul {
+  list-style: none;
+  padding: 0;
+}
+.contacts ul li {
+  margin-bottom: 10px;
+}
