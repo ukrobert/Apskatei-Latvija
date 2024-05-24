@@ -54,4 +54,21 @@ header p {
 }
 
 .subTitleCity{
+    align-items: center;
+    font-size: 3rem;
+    color:orange ;
+}
+
+.descriptionCity{
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+
+
+.titleCity{
+    align-items: center;
+    font-size: 2rem;
+    color: orange;
+
 }
