@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+}
+
+.map {
+    text-align: center;
+    padding: 20px;
+}
+
+.attractions {
+    padding: 20px;
+    text-align: center;
+}
+
+.attraction {
+    display: inline-block;
+    width: 30%;
+    margin: 1.5%;
+    vertical-align: top;
+}
+
+.attraction img {
+    width: 100%;
+    height: auto;
+}
+
+.attraction h3 {
+    font-size: 1.5em;
+    margin: 10px 0 5px;
+}
+
+.attraction p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.subTitleCity{
+}
