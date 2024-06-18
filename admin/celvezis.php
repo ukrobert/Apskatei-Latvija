@@ -2,8 +2,11 @@
     $page = "audzekni";
     require "header.php";
     require  '../assets/connect_db.php';
+    require "../assets/auth.php";
 ?>
-
+<head>
+<link rel="stylesheet" href="admin.css">
+</head>
 
 <section class="admin">
     <div class="row">

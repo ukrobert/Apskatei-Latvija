@@ -1,74 +1,133 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
+.starter {
+    background: url('../assets/pilsetasimages/background.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5em 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+.subTitleCity {
+    font-size: 3rem;
+    margin: 0.5em 0;
+    color: #ff6300;
+    font-weight: bold;
+    align-items: center;
+    margin-left:20rem ;
 }
 
-header p {
+.descriptionCity {
     font-size: 1.2em;
-    margin: 10px 0 0;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #ff6300;
+    align-items: center;
+    margin-left:20rem ;
 }
 
-.map {
+.destination {
+    padding: 3em 0;
+    background-color: white;
+}
+
+.titleCity {
     text-align: center;
-    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
-.attractions {
-    padding: 20px;
-    text-align: center;
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.attraction {
-    display: inline-block;
-    width: 30%;
-    margin: 1.5%;
-    vertical-align: top;
+.cardCity, .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
-.attraction img {
+.cardCity:hover, .card:hover {
+    transform: scale(1.05);
+}
+
+.image img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
-.attraction h3 {
+.contentCity {
+    padding: 1em;
+}
+
+.contentCity h3 {
+    margin: 0.5em 0 0;
     font-size: 1.5em;
-    margin: 10px 0 5px;
+    color: #ff6300;
 }
 
-.attraction p {
-    font-size: 1em;
-    margin: 0;
+/* Мобильные стили */
+@media (max-width: 768px) {
+    .responsive-toggle {
+        display: block;
+        color: white;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .links ul {
+        flex-direction: column;
+    }
+
+    .links li {
+        margin: 0.5em 0;
+    }
+
+    .links a {
+        padding: 1em;
+    }
+
+    .links.show {
+        display: flex;
+    }
 }
 
-.subTitleCity{
+/* Кнопка прокрутки вверх */
+.scrollToTop {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background-color: #333;
+    color: white;
+    padding: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
     align-items: center;
-    font-size: 3rem;
-    color:orange ;
+    justify-content: center;
 }
 
-.descriptionCity{
-    align-items: center;
-    font-size: 1.5rem;
-
+.scrollToTop i {
+    font-size: 1.5em;
 }
 
-
-.titleCity{
-    align-items: center;
-    font-size: 2rem;
-    color: orange;
-
+/* Показать кнопку при прокрутке */
+body.scrolled .scrollToTop {
+    display: flex;
 }

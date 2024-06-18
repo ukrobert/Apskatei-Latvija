@@ -5,7 +5,6 @@
     gap: 1.5rem;
   }
   
-  
   .admin .kopsavilkums .info-box{
   border: var(--border);
   border-radius: var(--radius);
@@ -58,21 +57,30 @@
   
   .admin .row .info1{
     flex: 1 1 45rem;
+    margin-bottom: 2rem;
   }
   
   .admin .row .info2{
     flex: 1 1 20rem;
   }
   
-  
+  .logout a{
+    color: #f8f8f8;
+  }
   .head-info{
     background: #f8f8f8;
     color: var(--black);
-    padding: 2rem;
+    padding: 4rem;
     font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     border-bottom: .1rem solid #ddd;
   }
+  
+
+
   
   .head-color{
     background: var(--bg);
@@ -86,6 +94,7 @@
   #sph3{
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
   }
   
   table{
@@ -131,20 +140,53 @@
     font-weight: bold;
     width: 50%;
   }
+
+  nav .links ul {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 9rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav .links ul li {
+    margin: 0 3rem;
+  }
+  
+  nav .links ul li a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .nav-container .brand{
+    font-size: 1rem;
+    position: relative;
+    right: 10rem;
+    
+  }
   header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    background: #ff6300;
+   
     z-index: 1;
     background: #fff;
     box-shadow: var(--box-shadow);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 9%;
+    padding: 0rem 9%; /* Уменьшено значение padding */
     text-decoration: none;
+    
 }
+
 .logo{
     font-size: 2.5rem;
     color: var(--black);

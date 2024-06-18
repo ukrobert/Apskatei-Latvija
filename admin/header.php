@@ -1,10 +1,24 @@
+<?php
+session_start();
+
+
+if (isset($_SESSION['Lietotajvards'])) {
+    $username = $_SESSION['Lietotajvards'];
+} else {
+    $username = 'Logout'; 
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/style.css" />
+     <link rel="stylesheet" href="../assets/style.css" /> 
+    
     <link rel="shortcut icon" href="../assets/images/fav.png" type="image/x-icon">
     <link
       rel="stylesheet"
@@ -15,9 +29,11 @@
     />
     <title>Apskati Latviju</title>
   </head>
-  <body>
+  <header style="background-color: #ff6300;height:200px;">
+     <title>Apskati Latviju</title>
     <div class="scrollToTop"><i class="fas fa-chevron-up"></i></div>
     <div class="container">
+    
       <nav>
         <div class="nav-container">
           <div class="brand">Apskati Latviju</div>
@@ -28,13 +44,21 @@
         <div class="links">
           <ul>
 
-            <li><a href="./" class="<?php echo($page == 'sakums' ? 'current' : '') ?>">Sakumlapa</a></li>
+          <li><a href="./" class="<?php echo($page == 'sakums' ? 'current' : '') ?>">Sakumlapa</a></li>
             <li><a href="ekskursijas.php">Rediģēt ekskursijas</a></li>
             <li><a href="celvezi.php">Rediģēt ceļvežus</a></li>
+            <li><a href="admini.php">Rediģēt adminus</a></li>
             <li><a href="jaunumi.php">Rediģēt sadaļa “Jaunums”</a></li>
             <li><a href="../" target="_blank">Uz galveno vietni</a></li>
-
-
+           
+            <nav class="logout">
+            <a href="../assets/logout.php"><b><?php echo htmlspecialchars($username); ?></b> <i class="fas fa-power-off"></i></a> 
+          </nav>
           </ul>
         </div>
       </nav>
+     
+      
+    </header>
+ 
+    
